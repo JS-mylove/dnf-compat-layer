@@ -24,4 +24,4 @@ jobs:
     - name: Run tests
       run: cargo test 
     - uses: actions/upload-artifact@v4
-     path: dnf-compat-layer/.github/workflows/
+     path: "dnf-compat-layer/.github/workflows/"
