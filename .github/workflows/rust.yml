@@ -23,3 +23,4 @@ jobs:
       run: cargo build --release
     - name: Run tests
       run: cargo test 
+    - uses: actions/upload-artifact@v4
