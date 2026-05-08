@@ -23,4 +23,4 @@ jobs:
       run: cargo test 
     - uses: actions/upload-artifact@v4 
       with:
-       path: .github/workflows/
+       path: /
