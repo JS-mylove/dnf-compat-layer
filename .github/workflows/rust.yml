@@ -22,24 +22,6 @@ jobs:
     - name: Run tests
       run: cargo test 
 
-
-
-
-  release:
-    types: [published]
-
-
-  zip-files:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: vimtor/action-zip@v1.2
-        with:
-          files: dist/ manifest.json
-          dest: build.zip
-
-       - uses: actions/upload-artifact@v4
-         with:
-           name: zip file
-           path: ${{ github.workspace }}/build.zip
+    - uses: actions/upload-artifact@v4
+      with:
+           path: ${{ github.workspace }}
